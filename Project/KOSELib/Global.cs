@@ -10,6 +10,9 @@ namespace KOSELib
         public const bool isClient = true;
         public const bool isServer = false;
 
+        public const int ClientPort = 17510;
+        public const int ServerPort = 17501;
+
         public static void SetShort(ref byte[] send_buff, Int16 tem, ref int send_index) 
         {
             byte[] NewByte = { (byte)(tem & 0x00FF), (byte)((tem & 0xFF00) >> 8) };
